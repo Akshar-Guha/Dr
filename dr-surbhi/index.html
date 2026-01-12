@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Surbhi Bansal Agrawal | Senior Physician & Fetal Medicine Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="#" class="brand">NEWLIFE <span>HOSPITAL</span></a>
+            <div class="mobile-toggle" onclick="toggleMenu()"><i data-lucide="menu"></i></div>
+            <nav class="nav-links" id="menu">
+                <a href="#home" class="active" onclick="toggleMenu()">Home</a>
+                <a href="#about" onclick="toggleMenu()">Profile</a>
+                <a href="#services" onclick="toggleMenu()">Services</a>
+                <a href="#facility" onclick="toggleMenu()">Facilities</a>
+                <a href="#proposal" style="color: var(--gold); font-weight: 700;">Partner Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="hero-grid">
+            <div style="order: 2; margin-bottom: 20px;">
+                <img src="dr-surbhi.png" alt="Dr. Surbhi Bansal Agrawal" style="width: 100%; height: auto; display: block; box-shadow: 20px 20px 0 var(--gold-light); border-radius: 4px;">
+            </div>
+            <div style="order: 1;">
+                <span class="subtitle">Center for Medical Excellence</span>
+                <h1>Precision in Fetal Medicine.<br>Compassion in Care.</h1>
+                <p style="margin-bottom: 30px; font-size: 1.1rem; color: #666; max-width: 500px;">
+                    Experience holistic healthcare with Dr. Surbhi Bansal Agrawal. Over 15 years of expertise in insulin-free diabetes management and high-risk pregnancy care.
+                </p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#services" class="btn">View Services</a>
+                    <a href="#about" class="btn btn-outline">Meet The Doctor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" style="background: white; padding: 80px 0;">
+        <div class="container">
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <span class="subtitle">The Visionary</span>
+                    <h2>Dr. Surbhi Bansal Agrawal</h2>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px;">
+                        <span style="background: var(--navy); color: white; padding: 6px 16px; font-size: 0.8rem; border-radius: 2px;">MBBS</span>
+                        <span style="background: var(--navy); color: white; padding: 6px 16px; font-size: 0.8rem; border-radius: 2px;">MHA (ICFAI)</span>
+                        <span style="background: var(--navy); color: white; padding: 6px 16px; font-size: 0.8rem; border-radius: 2px;">PDDM (Mumbai)</span>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 1.05rem;">
+                        A distinguished name in Nagpur's medical fraternity, Dr. Agrawal pioneers comprehensive care models focusing on long-term wellness.
+                    </p>
+                    <p style="margin-bottom: 30px; color: #555;">
+                        Her specialized training at Nanavati Hospital, Mumbai, equips her with advanced protocols for managing complex diabetes cases, thyroid disorders, and gestational health.
+                    </p>
+                    <ul style="list-style: none; padding-left: 0; line-height: 2;">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i data-lucide="check-circle" color="var(--gold)" size="20"></i> Member, American Diabetes Association</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i data-lucide="check-circle" color="var(--gold)" size="20"></i> Int'l Association for Study of Obesity</li>
+                    </ul>
+                </div>
+                <!-- Optional: Place a quote or second image here if available, else text expands -->
+                <div style="background: var(--gold-light); padding: 40px; border-radius: 4px; border-left: 5px solid var(--gold);">
+                    <h3 style="font-family: var(--font-display); color: var(--navy); margin-bottom: 20px;">"Our mission is to provide care that treats the patient, not just the disease."</h3>
+                    <p>— Dr. Surbhi Bansal Agrawal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" style="padding: 80px 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="subtitle">Clinical Expertise</span>
+                <h2>Comprehensive Services</h2>
+            </div>
+        
+            <!-- FETAL MEDICINE -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--gold); border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 30px;">
+                    <i data-lucide="baby" style="margin-right: 10px; vertical-align: middle;"></i> Fetal Medicine
+                </h3>
+                <div class="grid-2">
+                    <div class="card">
+                        <h4>Diagnostic Scans</h4>
+                        <ul style="list-style: none; margin-top: 15px; line-height: 1.8; font-size: 0.95rem;">
+                            <li><strong>• NT Scan:</strong> Early chromosomal screening.</li>
+                            <li><strong>• Anomaly Scan:</strong> Detailed Level II organ survey.</li>
+                            <li><strong>• 4D Ultrasound:</strong> Real-time fetal visualization.</li>
+                            <li><strong>• Color Doppler:</strong> Blood flow & placental health.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Procedures & Genetics</h4>
+                        <ul style="list-style: none; margin-top: 15px; line-height: 1.8; font-size: 0.95rem;">
+                            <li><strong>• Amniocentesis:</strong> Genetic fluid testing.</li>
+                            <li><strong>• CVS:</strong> Early pregnancy genetic sampling.</li>
+                            <li><strong>• Intrauterine Transfusion:</strong> Fetal anemia care.</li>
+                            <li><strong>• Genetic Counselling:</strong> Expert family guidance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GENERAL MEDICINE -->
+            <div>
+                <h3 style="color: var(--navy); border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 30px;">
+                    <i data-lucide="activity" style="margin-right: 10px; vertical-align: middle;"></i> General Medicine
+                </h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <h4>Diabetology</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Insulin-free management protocols, diet counselling, and continuous glucose monitoring (CGMS).</p>
+                    </div>
+                    <div class="card">
+                        <h4>Thyroid & Hormones</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Expert care for Hypothyroidism, PCOD/PCOS, and metabolic complications impacting fertility.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Gastroenterology</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Treatment for IBS, Acid Peptic Disease, liver disorders, and chronic gastric issues.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Hypertension</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Cardiac wellness and blood pressure management to prevent renal complications.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Infectious Diseases</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Protocols for viral fevers, dengue, typhoid, pneumonia, and post-viral recovery.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Wellness</h4>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Preventive health checkups, obesity management, and lifestyle modification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES SECTION -->
+    <section id="facility" style="background: var(--navy); color: white; padding: 80px 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="subtitle" style="color: var(--gold-light);">Infrastructure</span>
+                <h2 style="color: white;">Newlife Hospital Facilities</h2>
+                <p style="opacity: 0.8;">Located at Law Square, Gokulpeth, Nagpur</p>
+            </div>
+
+            <div class="grid-3">
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">Voluson E10 Ultrasound</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">The gold standard in 3D/4D fetal imaging for crystal clear visualization and early detection.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">Modular OT</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Laminar flow surgical suites with C-Arm technology for high-precision safety.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">In-House Pathology</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">24/7 advanced diagnostic lab ensuring rapid turnaround for critical tests.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">4K Laparoscopy</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Minimally invasive surgical setup for complex procedures with faster recovery.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">Luxury Recovery</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Private suites designed for patient comfort, privacy, and stress-free healing.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 4px;">
+                    <h4 style="color: var(--gold);">24/7 Pharmacy</h4>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Fully stocked in-house pharmacy for immediate medication access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UMBRA PROPOSAL SECTION -->
+    <section id="proposal" style="background: #050505; color: white; padding: 100px 0; margin-top: 0; position: relative;">
+        <!-- Transition Element -->
+        <div style="position: absolute; top: -50px; left: 0; width: 100%; height: 50px; background: linear-gradient(to bottom, transparent, #050505);"></div>
+
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 80px;">
+                <span class="subtitle" style="color: #3b82f6;">Partner With Umbra</span>
+                <h2 style="color: white; font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem);">We build automations that permanently remove manual work.</h2>
+                <p style="color: #a1a1aa; font-family: 'Inter', sans-serif; font-size: 1.2rem; margin-top: 20px;">
+                    Dr. Surbhi, your practice is premium. Your operations should be too.<br>
+                    Don't pay salaries for repetitive tasks—automate them.
+                </p>
+            </div>
+
+            <!-- COMPARISON -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px;">
+                <div style="padding: 40px; border-radius: 12px; background: #1c1917; border: 1px solid #333;">
+                    <h3 style="color: #a8a29e; font-family: 'Space Grotesk'; text-transform: uppercase; font-size: 1rem; margin-bottom: 25px;">The Manual Way</h3>
+                    <ul style="list-style: none; color: #a8a29e; line-height: 2; font-family: 'Inter';">
+                        <li style="display: flex; gap: 10px;"><i data-lucide="x" color="#ef4444"></i> Monthly Recurring Salaries</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="x" color="#ef4444"></i> Missed Patient Follow-ups</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="x" color="#ef4444"></i> Manual Data Entry Errors</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="x" color="#ef4444"></i> Limited Working Hours</li>
+                    </ul>
+                </div>
+                <div style="padding: 40px; border-radius: 12px; background: rgba(59, 130, 246, 0.1); border: 1px solid #3b82f6;">
+                    <h3 style="color: #3b82f6; font-family: 'Space Grotesk'; text-transform: uppercase; font-size: 1rem; margin-bottom: 25px;">The Umbra Way</h3>
+                    <ul style="list-style: none; color: white; line-height: 2; font-family: 'Inter';">
+                        <li style="display: flex; gap: 10px;"><i data-lucide="check-circle" color="#3b82f6"></i> One-Time Build Cost</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="check-circle" color="#3b82f6"></i> 100% Automated Reminders</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="check-circle" color="#3b82f6"></i> Perfect Digital Records</li>
+                        <li style="display: flex; gap: 10px;"><i data-lucide="check-circle" color="#3b82f6"></i> Systems Run 24/7/365</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SERVICES GRID -->
+            <h3 style="text-align: center; color: white; font-family: 'Space Grotesk'; margin-bottom: 40px;">Proposed Digital Infrastructure</h3>
+            
+            <div class="grid-3" style="font-family: 'Inter';">
+                <!-- 1 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="calendar-check" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">WhatsApp Appointment Booking</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> A simple link on your profile opens WhatsApp with a pre-filled booking message.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong></strong> Eliminates 'phone tag'. Your receptionist focuses on in-clinic patients instead of answering "Is the doctor available?" 50 times a day.</p>
+                </div>
+                <!-- 2 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">Benefit:
+                    <i data-lucide="bell-ring" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Automated Reminders</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> System automatically sends a WhatsApp/SMS alert 24 hours before the visit.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Reduces 'No-Shows' by 40%. A patient who remembers their appointment is a patient who pays.</p>
+                </div>
+                <!-- 3 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="database" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Cloud Patient Records (EMR)</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> Secure digital forms replace paper files, accessible from your iPad or Phone anywhere.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Instant history retrieval. No improved care because you see the full picture in seconds, not after digging through file cabinets.</p>
+                </div>
+                <!-- 4 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="video" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Online Consultation Portal</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> A branded video portal that handles payment collection BEFORE the call starts.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Monetize follow-ups. Stop giving free advice over the phone and turn remote care into a revenue stream.</p>
+                </div>
+                <!-- 5 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="file-spreadsheet" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Smart Billing & Invoicing</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> Input procedure codes, and the system generates GST-compliant PDFs instantly.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Zero calculation errors. End-of-day accounting takes 5 minutes instead of an hour.</p>
+                </div>
+                <!-- 6 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="pill" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Prescription Automation</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> Select diagnosis, and the system auto-fills your standard medicine template.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Write prescriptions in 30 seconds. Spend more time talking to the patient, less time writing generic names.</p>
+                </div>
+                <!-- 7 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="message-square" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">24/7 AI Receptionist</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> An intelligent chatbot on your site answers "What are your fees?" and "Where are you located?"</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Captures patients at 11 PM when your clinic is closed. You wake up to booked appointments.</p>
+                </div>
+                <!-- 8 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="users" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Smart Queue Management</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> Patients receive a live "Token Number" on their phone to track their turn.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> A calm waiting room. Patients assume you are high-tech and organized, reducing anxiety and complaints.</p>
+                </div>
+                <!-- 9 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="test-tube" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Lab Report Auto-Delivery</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> When a lab result is ready, it is automatically WhatsApped to the patient.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> Staff doesn't waste time finding and emailing files. Patients get results faster, improving satisfaction.</p>
+                </div>
+                <!-- 10 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="star" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Reputation Management</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> After a visit, the system politely asks happy patients to leave a Google Review.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> You become the #1 Google Rated Doctor in your area automatically, driving free new traffic.</p>
+                </div>
+                <!-- 11 -->
+                <div style="background: #121212; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                    <i data-lucide="tablet" color="#3b82f6" style="margin-bottom: 15px;"></i>
+                    <h4 style="color: white; margin-bottom: 10px;">Paperless Onboarding</h4>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-bottom: 10px;"><strong>How it works:</strong> New patients sign consent forms on an iPad in the lobby.</p>
+                    <p style="color: #71717a; font-size: 0.85rem;"><strong>Benefit:</strong> No physical storage cost. Legally compliant records that are searchable and never get lost/eaten by termites.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 80px;">
+                <p style="color: #a1a1aa; margin-bottom: 30px;">This portfolio is just the beginning.</p>
+                <a href="tel:+" style="background: #3b82f6; color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; display: inline-block;">
+                    Start Your Process Review
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: white; font-family: var(--font-display);">NEWLIFE HOSPITAL</h3>
+                <p style="opacity: 0.7;">Law Square, Gokulpeth, Nagpur</p>
+                <p style="opacity: 0.7; margin-top: 10px;">Managed by Dr. Surbhi Bansal Agrawal</p>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2025. All Rights Reserved.</p>
+                <div>
+                    <a href="#proposal" style="font-size: 0.8rem; color: var(--gold); font-weight: 600;">Partner Access</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

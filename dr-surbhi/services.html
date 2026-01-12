@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Surbhi Bansal Agrawal | Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="brand">NEWLIFE <span>HOSPITAL</span></a>
+            <div class="mobile-toggle" onclick="toggleMenu()"><i data-lucide="menu"></i></div>
+            <nav class="nav-links" id="menu">
+                <a href="index.html">Home</a>
+                <a href="profile.html">About & Facility</a>
+                <a href="services.html" class="active">Clinical Services</a>
+                <a href="proposal.html" style="color: var(--gold);">Partner Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container" style="padding-top: 60px;">
+        <span class="subtitle">Expertise</span>
+        <h1>Clinical Services</h1>
+        <p style="max-width: 800px; margin-bottom: 60px;">Dr. Surbhi Bansal Agrawal provides specialized care across two major domains: Advanced Fetal Medicine for expectant mothers and General Medicine for chronic disease management.</p>
+    
+        <!-- SECTION 1 -->
+        <div style="margin-bottom: 80px;">
+            <div style="border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+                <h2 style="margin: 0;">Fetal Medicine Department</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i data-lucide="scan-line" style="color: var(--gold); margin-right: 10px;"></i> Diagnostic Scans</h3>
+                    <ul style="list-style: none; margin-top: 15px; line-height: 2;">
+                        <li><strong>NT Scan:</strong> Early screening for chromosomal abnormalities.</li>
+                        <li><strong>Anomaly Scan (Level II):</strong> Detailed organ survey of the fetus.</li>
+                        <li><strong>Growth Scans:</strong> Monitoring fetal weight and well-being.</li>
+                        <li><strong>Color Doppler:</strong> Assessing blood flow and placental function.</li>
+                        <li><strong>Fetal Echo:</strong> Specialized heart screening for the baby.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3><i data-lucide="microscope" style="color: var(--gold); margin-right: 10px;"></i> Procedures & Genetics</h3>
+                    <ul style="list-style: none; margin-top: 15px; line-height: 2;">
+                        <li><strong>Amniocentesis:</strong> Fluid testing for genetic diagnosis.</li>
+                        <li><strong>Chorionic Villus Sampling (CVS):</strong> Early genetic testing.</li>
+                        <li><strong>Fetal Reduction:</strong> For high-order multiple pregnancies.</li>
+                        <li><strong>Intrauterine Transfusion:</strong> Treating fetal anemia.</li>
+                        <li><strong>Genetic Counselling:</strong> Expert guidance for high-risk families.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div style="margin-bottom: 80px;">
+            <div style="border-bottom: 2px solid var(--navy); padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+                <h2 style="margin: 0;">General Medicine</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Diabetology</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Comprehensive diabetes care focusing on 'Insulin-Free' management where possible. Includes diet counselling, CGMS monitoring, and complication prevention.</p>
+                </div>
+                <div class="card">
+                    <h3>Thyroid & Hormones</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Management of Hypothyroidism, Hyperthyroidism, PCOD/PCOS, and other endocrine disorders affecting metabolism and fertility.</p>
+                </div>
+                <div class="card">
+                    <h3>Gastroenterology</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Treatment for Acid Peptic Disease, IBS, Liver disorders, and other acute/chronic gastric ailments.</p>
+                </div>
+                <div class="card">
+                    <h3>Hypertension</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Blood pressure management protocols to prevent cardiac and renal complications.</p>
+                </div>
+                <div class="card">
+                    <h3>Infectious Diseases</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Expert handling of viral fevers, dengue, typhoid, pneumonia, and post-COVID complications.</p>
+                </div>
+                <div class="card">
+                    <h3>Wellness</h3>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Preventive health checkups, obesity management, and lifestyle modification coaching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Newlife Hospital & Fetal Medicine Center.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
