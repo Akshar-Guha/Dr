@@ -215,3 +215,139 @@ footer {
 
 footer a { color: rgba(255,255,255,0.7); }
 footer a:hover { color: var(--gold); }
+
+/* ============================================
+   MOBILE OPTIMIZATION (Minimalist Aesthetic)
+   ============================================ */
+
+/* Hero on Mobile */
+.hero-grid {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-grid img {
+    max-width: 200px !important;
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3) !important;
+    border: 4px solid var(--gold-light);
+}
+
+.hero-grid h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.hero-grid p {
+    font-size: 1rem;
+    margin: 0 auto 25px auto;
+}
+
+.hero-grid .btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 14px 20px;
+    font-size: 0.8rem;
+}
+
+/* Mobile Section Spacing */
+section {
+    padding: 50px 0 !important;
+}
+
+#home {
+    padding-top: 30px !important;
+    padding-bottom: 40px !important;
+}
+
+/* Mobile Typography */
+@media (max-width: 767px) {
+    h1 { font-size: 1.8rem !important; margin-bottom: 15px; }
+    h2 { font-size: 1.5rem !important; margin-bottom: 20px; }
+    h3 { font-size: 1.2rem !important; }
+    h4 { font-size: 1rem !important; }
+    
+    .subtitle { font-size: 0.75rem; letter-spacing: 1.5px; margin-bottom: 10px; }
+    
+    p { font-size: 0.95rem !important; line-height: 1.6; }
+    
+    /* Container Padding */
+    .container { padding: 0 20px; }
+    
+    /* Cards */
+    .card { padding: 20px; }
+    
+    /* Grid fixes */
+    .grid-2, .grid-3 { gap: 20px; margin-top: 25px; }
+    
+    /* About Quote Box */
+    #about .grid-2 > div:last-child {
+        padding: 25px;
+        margin-top: 20px;
+    }
+    
+    /* Services Section */
+    #services ul li { font-size: 0.9rem; }
+    
+    /* Facilities Dark Section */
+    #facility .grid-3 > div { padding: 20px; }
+    #facility h4 { font-size: 0.95rem !important; }
+    #facility p { font-size: 0.85rem !important; }
+    
+    /* Proposal Section Mobile */
+    #proposal { padding: 60px 0 !important; }
+    #proposal h2 { font-size: 1.4rem !important; line-height: 1.3; }
+    #proposal .grid-3 > div { padding: 20px !important; }
+    #proposal h4 { font-size: 0.95rem !important; margin-bottom: 8px; }
+    #proposal p { font-size: 0.85rem !important; margin-bottom: 8px !important; }
+    
+    /* Comparison Boxes */
+    #proposal > .container > div:nth-child(2) > div {
+        padding: 25px !important;
+    }
+    
+    /* CTA Button in Proposal */
+    #proposal a[style*="background: #3b82f6"] {
+        padding: 14px 30px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Footer */
+    footer { padding: 40px 0; }
+    footer h3 { font-size: 1.1rem !important; }
+}
+
+/* Desktop Overrides - Reset mobile hero styles */
+@media (min-width: 768px) {
+    .hero-grid {
+        text-align: left;
+    }
+    
+    .hero-grid img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 4px !important;
+        box-shadow: 20px 20px 0 var(--gold-light) !important;
+        border: none;
+    }
+    
+    .hero-grid .btn {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    section {
+        padding: 80px 0 !important;
+    }
+    
+    #home {
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+    }
+}
