@@ -6,36 +6,126 @@
     <title>Dr. Surbhi Bansal Agrawal | Senior Physician & Fetal Medicine Expert</title>
     <link rel="stylesheet" href="styles.css?v=4">
     <style>
-        /* CRITICAL MOBILE OVERRIDE - Embedded to bypass caching */
+        /* MINIMALIST AESTHETIC MOBILE DESIGN */
         @media (max-width: 767px) {
-            .hero-section { padding: 25px 0 40px 0 !important; }
+            /* Hero Section - Clean & Minimal */
+            .hero-section { 
+                padding: 40px 0 50px 0 !important; 
+                min-height: auto !important;
+            }
+            
             .hero-grid { 
                 display: flex !important; 
                 flex-direction: column !important; 
                 align-items: center !important; 
                 text-align: center !important; 
-                gap: 20px !important; 
+                gap: 24px !important; 
             }
+            
+            /* Elegant Small Circular Photo */
             .hero-image-wrapper { 
-                width: 130px !important; 
-                height: 130px !important; 
+                width: 100px !important; 
+                height: 100px !important; 
                 border-radius: 50% !important; 
                 overflow: hidden !important; 
-                border: 3px solid #d4af37 !important; 
-                box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3) !important; 
+                border: 2px solid rgba(212, 175, 55, 0.4) !important; 
+                box-shadow: 
+                    0 4px 20px rgba(0, 0, 0, 0.08),
+                    0 0 0 6px rgba(212, 175, 55, 0.08) !important; 
                 flex-shrink: 0 !important;
+                margin-bottom: 8px !important;
             }
+            
             .hero-image { 
-                width: 100% !important; 
-                height: 100% !important; 
+                width: 160% !important; 
+                height: 160% !important; 
                 object-fit: cover !important; 
-                object-position: center 20% !important; /* Crop to show face, hide Google Maps UI */
+                object-position: 35% 15% !important;
                 display: block !important; 
+                margin-left: -30% !important;
+                margin-top: -15% !important;
             }
-            .hero-content h1 { font-size: 1.5rem !important; line-height: 1.3 !important; margin-bottom: 12px !important; }
-            .hero-description { font-size: 0.9rem !important; margin-bottom: 20px !important; }
-            .hero-buttons { display: flex !important; flex-direction: column !important; gap: 10px !important; width: 100% !important; }
-            .hero-buttons .btn { width: 100% !important; padding: 12px 20px !important; font-size: 0.8rem !important; }
+            
+            /* Refined Typography */
+            .subtitle {
+                font-size: 0.65rem !important;
+                letter-spacing: 2.5px !important;
+                color: #b8860b !important;
+                margin-bottom: 12px !important;
+                font-weight: 500 !important;
+            }
+            
+            .hero-content h1 { 
+                font-size: 1.6rem !important; 
+                line-height: 1.35 !important; 
+                margin-bottom: 16px !important; 
+                font-weight: 400 !important;
+                letter-spacing: -0.5px !important;
+            }
+            
+            .hero-content h1 br {
+                display: none !important;
+            }
+            
+            .hero-description { 
+                font-size: 0.875rem !important; 
+                margin-bottom: 28px !important;
+                color: #666 !important;
+                line-height: 1.7 !important;
+                max-width: 320px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            
+            /* Minimal Buttons */
+            .hero-buttons { 
+                display: flex !important; 
+                flex-direction: row !important; 
+                gap: 12px !important; 
+                width: 100% !important; 
+                justify-content: center !important;
+            }
+            
+            .hero-buttons .btn { 
+                width: auto !important; 
+                padding: 12px 24px !important; 
+                font-size: 0.7rem !important;
+                letter-spacing: 1px !important;
+                border-radius: 2px !important;
+            }
+            
+            .hero-buttons .btn-outline {
+                background: transparent !important;
+                border: 1px solid #1a1a1a !important;
+            }
+            
+            /* Sections - More Breathing Room */
+            section { padding: 50px 0 !important; }
+            
+            /* Cards - Cleaner Look */
+            .card {
+                padding: 24px !important;
+                border-radius: 4px !important;
+                border: 1px solid rgba(0,0,0,0.06) !important;
+                box-shadow: none !important;
+            }
+            
+            .card:hover {
+                transform: none !important;
+                border-color: rgba(212, 175, 55, 0.3) !important;
+            }
+            
+            /* About Section Mobile */
+            #about .grid-2 > div:last-child {
+                padding: 24px !important;
+                margin-top: 24px !important;
+                font-size: 0.95rem !important;
+            }
+            
+            /* Footer - Minimal */
+            footer {
+                padding: 40px 0 !important;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
