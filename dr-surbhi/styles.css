@@ -220,45 +220,68 @@ footer a:hover { color: var(--gold); }
    MOBILE OPTIMIZATION (Minimalist Aesthetic)
    ============================================ */
 
-/* Hero on Mobile */
+/* Hero Section */
+.hero-section {
+    padding: 30px 0 50px 0;
+}
+
+/* Hero Grid - Mobile First (stacked) */
 .hero-grid {
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Hero Image - Mobile First */
-.hero-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 30px auto;
-    display: block;
-    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
-    border: 4px solid var(--gold-light);
-}
-
-.hero-image-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
 }
 
-.hero-grid h1 {
-    font-size: 2rem;
-    line-height: 1.2;
+/* Hero Image - Mobile: Small circular, cropped to hide Google Maps UI */
+.hero-image-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.25);
+    flex-shrink: 0;
 }
 
-.hero-grid p {
-    font-size: 1rem;
-    margin: 0 auto 25px auto;
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Focus on face, crop bottom where Google Maps UI is */
+    display: block;
 }
 
-.hero-grid .btn {
+/* Hero Content */
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-buttons .btn {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
-    padding: 14px 20px;
-    font-size: 0.8rem;
+    padding: 14px 24px;
+    font-size: 0.85rem;
 }
 
 /* Mobile Section Spacing */
@@ -328,35 +351,64 @@ section {
     footer h3 { font-size: 1.1rem !important; }
 }
 
-/* Desktop Overrides - Reset mobile hero styles */
+/* Desktop Overrides */
 @media (min-width: 768px) {
+    .hero-section {
+        padding: 60px 0 80px 0;
+    }
+    
     .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
         text-align: left;
+    }
+    
+    .hero-image-wrapper {
+        order: 2;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        overflow: visible;
+        border: none;
+        box-shadow: 20px 20px 0 var(--gold-light);
     }
     
     .hero-image {
         width: 100%;
         height: auto;
+        object-position: center center;
         border-radius: 4px;
-        box-shadow: 20px 20px 0 var(--gold-light);
-        border: none;
     }
     
-    .hero-image-wrapper {
-        display: block;
+    .hero-content {
+        order: 1;
+        max-width: none;
     }
     
-    .hero-grid .btn {
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
         width: auto;
-        margin-bottom: 0;
     }
     
     section {
         padding: 80px 0 !important;
-    }
-    
-    #home {
-        padding-top: 40px !important;
-        padding-bottom: 60px !important;
     }
 }
